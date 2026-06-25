@@ -1,0 +1,30 @@
+# venvs
+.venv/
+venv/
+env/
+
+# OS cruft
+.DS_Store
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Big artifacts we don't want in git
+mlruns/
+artifacts/
+data/raw/
+data/processed/
+
+# BUT keep our bundled serving model in the repo
+!model_export/
+!model_export/**
+
+
+#Ignore vscode AI rules
+.github\instructions\codacy.instructions.md
+
+# Gradio files
+.gradio/
+
